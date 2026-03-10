@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LimpaCidade - Agendar Coleta de Volumosos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="img/logo.png" alt="Logo LimpaCidade" class="logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="mapa.html">Ecopontos</a></li>
+        <li><a href="denunciar.html">Denunciar</a></li>
+        <li><a href="agendar.html">Agendar Coleta</a></li>
+        <li><a href="educacao.html">Educação</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Agendamento de Coleta de Materiais Volumosos</h1>
+    <p>Solicite a retirada de móveis, eletrodomésticos e outros itens grandes.</p>
+
+    <form id="form-coleta">
+      <div class="form-group">
+        <label for="item">Tipo de item (ex: sofá, geladeira, entulho): *</label>
+        <input type="text" id="item" name="item" required>
+      </div>
+
+      <div class="form-group">
+        <label for="endereco">Endereço completo para retirada: *</label>
+        <textarea id="endereco" name="endereco" rows="3" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="observacoes">Observações (opcional):</label>
+        <textarea id="observacoes" name="observacoes" rows="3"></textarea>
+      </div>
+
+      <button type="submit">Solicitar Coleta</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="contact-buttons">
+      <a href="tel:0800123456">📞 0800 123 456</a>
+      <a href="mailto:contato@limpacidade.gov.br">✉️ contato@limpacidade.gov.br</a>
+    </div>
+    <p>&copy; 2026 LimpaCidade</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

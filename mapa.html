@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LimpaCidade - Mapa de Ecopontos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="img/logo.png" alt="Logo LimpaCidade" class="logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="mapa.html">Ecopontos</a></li>
+        <li><a href="denunciar.html">Denunciar</a></li>
+        <li><a href="agendar.html">Agendar Coleta</a></li>
+        <li><a href="educacao.html">Educação</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Mapa de Ecopontos</h1>
+    <p>Encontre o ponto de coleta mais próximo para cada tipo de material.</p>
+
+    <div class="map-placeholder">
+      <img src="img/mapa.png" alt="Mapa de ecopontos da cidade">
+    </div>
+
+    <h2>Filtrar por material</h2>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="eletronicos">Eletrônicos</button>
+      <button class="filter-btn" data-filter="oleo">Óleo</button>
+      <button class="filter-btn" data-filter="moveis">Móveis</button>
+      <button class="filter-btn" data-filter="pilhas">Pilhas</button>
+      <button class="filter-btn" data-filter="entulho">Entulho</button>
+    </div>
+
+    <div id="ecopontos-lista">
+      <div class="ecoponto-card" data-materiais="eletronicos pilhas">
+        <h3>Ecoponto Centro</h3>
+        <p>Rua A, 123 - Centro</p>
+        <div class="materiais">
+          <span class="tag">Eletrônicos</span>
+          <span class="tag">Pilhas</span>
+        </div>
+      </div>
+      <div class="ecoponto-card" data-materiais="oleo">
+        <h3>Ecoponto Óleo Sustentável</h3>
+        <p>Av. B, 456 - Jardins</p>
+        <div class="materiais">
+          <span class="tag">Óleo de cozinha</span>
+        </div>
+      </div>
+      <div class="ecoponto-card" data-materiais="moveis entulho">
+        <h3>Ecoponto Volumosos</h3>
+        <p>Rua C, 789 - Industrial</p>
+        <div class="materiais">
+          <span class="tag">Móveis</span>
+          <span class="tag">Entulho</span>
+        </div>
+      </div>
+      <div class="ecoponto-card" data-materiais="eletronicos">
+        <h3>Recicla Tech</h3>
+        <p>Rua D, 101 - Vila Nova</p>
+        <div class="materiais">
+          <span class="tag">Eletrônicos</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contact-buttons">
+      <a href="tel:0800123456">📞 0800 123 456</a>
+      <a href="mailto:contato@limpacidade.gov.br">✉️ contato@limpacidade.gov.br</a>
+    </div>
+    <p>&copy; 2026 LimpaCidade</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
